@@ -32,7 +32,7 @@ namespace BLL.Services
 
 		public Telefono GetOne(Guid id)
 		{
-			throw new NotImplementedException();
+			return repo.GetOne(id);
 		}
 
 		public void Remove(Guid id)

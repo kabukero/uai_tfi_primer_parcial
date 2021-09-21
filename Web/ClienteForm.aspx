@@ -27,10 +27,8 @@
 		<div class="row col-md-12">
 			<div class="form-group col-md-4">
 				<asp:Button ID="BtnGuardar" runat="server" Text="Guardar" CssClass="btn btn-primary" OnClick="Guardar_Click" />
-				<a href="ListadoClientes" class="btn">Cancelar</a>
 			</div>
 		</div>
 		<asp:HiddenField ID="TxtId" runat="server"></asp:HiddenField>
-		<asp:Panel ID="ErrorPanel" CssClass="alert alert-danger" runat="server"></asp:Panel>
 	</div>
 </asp:Content>

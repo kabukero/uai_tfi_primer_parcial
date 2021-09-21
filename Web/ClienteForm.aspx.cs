@@ -19,12 +19,9 @@ namespace Web
 		{
 			service = new ClienteService();
 			TxtId.Value = Request.QueryString["Id"];
-			ErrorPanel.Visible = false;
-
 			ChkHabilitado.Checked = true;
-			if(!string.IsNullOrEmpty(TxtId.Value))
+			if(!IsPostBack && !string.IsNullOrEmpty(TxtId.Value))
 				LlenarForm();
-
 		}
 
 		private void LlenarForm()

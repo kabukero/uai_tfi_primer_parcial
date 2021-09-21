@@ -48,7 +48,19 @@ namespace DAL.Repositories.SqlServer
 
 		public Telefono GetOne(Guid id)
 		{
-			throw new NotImplementedException();
+			Telefono telefono = new Telefono();
+			using(var dr = SqlHelper.ExecuteReader("TelefonoGetOne", CommandType.StoredProcedure, new SqlParameter[] { new SqlParameter("@Id", id) }))
+			{
+				while(dr.Read())
+				{
+					object[] values = new object[dr.FieldCount];
+					dr.GetValues(values);
+					telefono = TelefonoAdapter.Adapt(values);
+				}
+				dr.Close();
+			}
+			return telefono;
+
 		}
 
 		public void Update(Telefono obj)
