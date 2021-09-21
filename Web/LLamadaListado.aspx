@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<div class="row col-md-12">
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-8">
 				<label for="DLLPromocion">Promocion</label>
 				<asp:DropDownList ID="DLLPromocion" placeholder="Promocion" CssClass="form-control" runat="server"></asp:DropDownList>
 			</div>

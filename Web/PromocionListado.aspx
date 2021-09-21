@@ -12,7 +12,7 @@
 				<asp:BoundField DataField="Enable" HeaderText="Habilitado" />
 				<asp:TemplateField HeaderText="Acción">
 					<ItemTemplate>
-						<asp:Button ID="BtnSeleccionar" runat="server" CausesValidation="false" CommandName="Seleccionar" Text="Seleccionar" CommandArgument='<%# Eval("Id") %>' CssClass="btn btn-secondary" />
+						<asp:Button ID="BtnSeleccionar" runat="server" CausesValidation="false" CommandName="Seleccionar" Text="Seleccionar" CommandArgument='<%# Eval("Id") %>' CssClass="btn btn-primary" />
 						<asp:Button ID="BtnEliminar" runat="server" CausesValidation="false" CommandName="Eliminar" Text="Eliminar" CommandArgument='<%# Eval("Id") %>' CssClass="btn btn-secondary" />
 					</ItemTemplate>
 				</asp:TemplateField>
