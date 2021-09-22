@@ -16,5 +16,6 @@ namespace BE
 		public Promocion Promocion { get; set; }
 		public int DuracionMinutos { get; set; }
 		public DateTime FechaLlamada { get; set; }
+		public decimal Importe { get; set; }
 	}
 }

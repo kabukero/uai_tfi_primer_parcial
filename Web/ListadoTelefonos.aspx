@@ -8,6 +8,7 @@
 				<asp:BoundField DataField="Id" HeaderText="Id" Visible="false" />
 				<asp:BoundField DataField="Cliente.NombreCompleto" HeaderText="Cliente" />
 				<asp:BoundField DataField="TelefonoTipo.Nombre" HeaderText="Tipo" />
+				<asp:BoundField DataField="Empresa.Nombre" HeaderText="Empresa" />
 				<asp:BoundField DataField="Numero" HeaderText="Numero" />
 				<asp:BoundField DataField="Enable" HeaderText="Habilitado" />
 				<asp:TemplateField HeaderText="Acción">
@@ -25,6 +26,10 @@
 			<div class="form-group col-md-4">
 				<label for="DDLCliente">Cliente</label>
 				<asp:DropDownList ID="DDLCliente" placeholder="Cliente" CssClass="form-control" runat="server"></asp:DropDownList>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="DDLEmpresa">Empresa</label>
+				<asp:DropDownList ID="DDLEmpresa" placeholder="Empresa" CssClass="form-control" runat="server"></asp:DropDownList>
 			</div>
 			<div class="form-group col-md-4">
 				<label for="DLLTipo">Tipo</label>

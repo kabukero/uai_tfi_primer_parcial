@@ -21,6 +21,7 @@ namespace DAL.Repositories.SqlServer
 										new SqlParameter("@Numero", obj.Numero),
 										new SqlParameter("@ClienteId", obj.Cliente.Id),
 										new SqlParameter("@TelefonoTipoId", obj.TelefonoTipo.Id),
+										new SqlParameter("@EmpresaId", obj.Empresa.Id),
 										new SqlParameter("@Habilitado", obj.Habilitado) });
 		}
 

@@ -23,6 +23,10 @@ namespace BE
 			get => string.Format("{0} {1}", Nombre, Apellido);
 		}
 
+		public IEnumerable<FacturaCabecera> facturaCabeceras { get; set; }
+
+		public IEnumerable<Telefono> Telefonos { get; set; }
+
 		public Cliente()
 		{
 

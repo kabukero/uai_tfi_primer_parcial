@@ -6,12 +6,13 @@
 		<asp:GridView ID="gvLlamadas" runat="server" AutoGenerateColumns="false" CssClass="table table-responsive table-striped table-hover">
 			<Columns>
 				<asp:BoundField DataField="Id" HeaderText="Id" Visible="false" />
-				<asp:BoundField DataField="TelefonoOrigen.Numero" HeaderText="Numero Origen" />
+				<asp:BoundField DataField="TelefonoOrigen.TelefonoCliente" HeaderText="Numero Origen" />
 				<asp:BoundField DataField="DestinoOrigen.Nombre" HeaderText="Destino Origen" />
-				<asp:BoundField DataField="TelefonoDestino.Numero" HeaderText="Numero Destino" />
+				<asp:BoundField DataField="TelefonoDestino.TelefonoCliente" HeaderText="Numero Destino" />
 				<asp:BoundField DataField="DestinoDestino.Nombre" HeaderText="Destino Origen" />
 				<asp:BoundField DataField="Promocion.Nombre" HeaderText="Tipo" />
 				<asp:BoundField DataField="DuracionMinutos" HeaderText="Duracion" />
+				<asp:BoundField DataField="Importe" HeaderText="Importe" />
 				<asp:BoundField DataField="FechaLlamada" HeaderText="Fecha" />
 			</Columns>
 			<HeaderStyle CssClass="thead-dark" />
@@ -53,6 +54,8 @@
 			<div class="form-group col-md-4">
 				<label for="TxtDuracionMinutos">Duracion Minutos</label>
 				<asp:TextBox ID="TxtDuracionMinutos" placeholder="Duracion Minutos" CssClass="form-control" runat="server"></asp:TextBox>
+				<asp:RequiredFieldValidator ControlToValidate="TxtDuracionMinutos" Text="Ingrese la duración en minutos" CssClass="text-danger" runat="server"></asp:RequiredFieldValidator>
+				<asp:RegularExpressionValidator ControlToValidate="TxtDuracionMinutos" Text="La duración debe ser un número" ValidationExpression="\d+" CssClass="text-danger" runat="server"></asp:RegularExpressionValidator>
 			</div>
 		</div>
 		<div class="row col-md-12">

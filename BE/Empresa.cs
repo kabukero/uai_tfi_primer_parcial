@@ -15,5 +15,8 @@ namespace BE
 		{
 			get => Habilitado ? "SI" : "NO";
 		}
+
+		public IEnumerable<Telefono> Telefonos { get; set; }
+		public IEnumerable<Destino> Destinos { get; set; }
 	}
 }

@@ -46,8 +46,11 @@
     <Compile Include="Services\ClienteService.cs" />
     <Compile Include="Services\DestinoService.cs" />
     <Compile Include="Services\EmpresaService.cs" />
+    <Compile Include="Services\FacturaService.cs" />
+    <Compile Include="Services\FechaService.cs" />
     <Compile Include="Services\LlamadaService.cs" />
     <Compile Include="Services\PromocionService.cs" />
+    <Compile Include="Services\ReporteService.cs" />
     <Compile Include="Services\TelefonoService.cs" />
     <Compile Include="Services\TelefonoTipoService.cs" />
   </ItemGroup>

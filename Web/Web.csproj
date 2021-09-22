@@ -116,6 +116,7 @@
     <Content Include="Default.aspx" />
     <Content Include="DestinoListado.aspx" />
     <Content Include="EmpresaListado.aspx" />
+    <Content Include="FacturaListado.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -132,6 +133,10 @@
     <Content Include="ListadoTelefonos.aspx" />
     <Content Include="LLamadaListado.aspx" />
     <Content Include="PromocionListado.aspx" />
+    <Content Include="ReporteCargoMesCliente.aspx" />
+    <Content Include="ReportePorcLlamadas.aspx" />
+    <Content Include="ReporteRecMesPromocion.aspx" />
+    <Content Include="ReporteRecTotalMes.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -211,6 +216,13 @@
     <Compile Include="EmpresaListado.aspx.designer.cs">
       <DependentUpon>EmpresaListado.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FacturaListado.aspx.cs">
+      <DependentUpon>FacturaListado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacturaListado.aspx.designer.cs">
+      <DependentUpon>FacturaListado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -243,6 +255,34 @@
       <DependentUpon>PromocionListado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteCargoMesCliente.aspx.cs">
+      <DependentUpon>ReporteCargoMesCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteCargoMesCliente.aspx.designer.cs">
+      <DependentUpon>ReporteCargoMesCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePorcLlamadas.aspx.cs">
+      <DependentUpon>ReportePorcLlamadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportePorcLlamadas.aspx.designer.cs">
+      <DependentUpon>ReportePorcLlamadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteRecMesPromocion.aspx.cs">
+      <DependentUpon>ReporteRecMesPromocion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteRecMesPromocion.aspx.designer.cs">
+      <DependentUpon>ReporteRecMesPromocion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteRecTotalMes.aspx.cs">
+      <DependentUpon>ReporteRecTotalMes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteRecTotalMes.aspx.designer.cs">
+      <DependentUpon>ReporteRecTotalMes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -11,17 +11,17 @@ namespace Web
 {
 
 
-	public partial class ListadoTelefonos
+	public partial class ReporteCargoMesCliente
 	{
 
 		/// <summary>
-		/// gvTelefonos control.
+		/// DDLMes control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.GridView gvTelefonos;
+		protected global::System.Web.UI.WebControls.DropDownList DDLMes;
 
 		/// <summary>
 		/// DDLCliente control.
@@ -33,48 +33,21 @@ namespace Web
 		protected global::System.Web.UI.WebControls.DropDownList DDLCliente;
 
 		/// <summary>
-		/// DDLEmpresa control.
+		/// BtnEnviar control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.DropDownList DDLEmpresa;
+		protected global::System.Web.UI.WebControls.Button BtnEnviar;
 
 		/// <summary>
-		/// DLLTipo control.
+		/// gvReporte control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.DropDownList DLLTipo;
-
-		/// <summary>
-		/// TxtNumero control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TxtNumero;
-
-		/// <summary>
-		/// ChkHabilitado control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.CheckBox ChkHabilitado;
-
-		/// <summary>
-		/// BtnGuardar control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button BtnGuardar;
+		protected global::System.Web.UI.WebControls.GridView gvReporte;
 	}
 }

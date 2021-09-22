@@ -24,7 +24,8 @@ namespace DAL.Repositories.SqlServer
 										new SqlParameter("@DestinoDestinoId", obj.DestinoDestino.Id),
 										new SqlParameter("@DuracionMinutos", obj.DuracionMinutos),
 										new SqlParameter("@PromocionId", obj.Promocion.Id),
-										new SqlParameter("@FechaLlamada", obj.FechaLlamada.ToString("yyyy/MM/dd"))
+										new SqlParameter("@FechaLlamada", obj.FechaLlamada.ToString("yyyy/MM/dd")),
+										new SqlParameter("@Importe", obj.Importe)
 					});
 		}
 

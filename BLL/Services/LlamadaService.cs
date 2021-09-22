@@ -13,14 +13,18 @@ namespace BLL.Services
 	public class LlamadaService : IGenericBusinessLogic<Llamada>
 	{
 		private IGenericRepository<Llamada> repo;
+		private IGenericRepository<Promocion> repoPromocion;
 
 		public LlamadaService()
 		{
 			repo = new LlamadaRepository();
+			repoPromocion = new PromocionRepository();
 		}
 
 		public void Create(Llamada obj)
 		{
+			var promocion = repoPromocion.GetOne(obj.Promocion.Id);
+			obj.Importe = obj.DuracionMinutos * promocion.CostoMinuto + promocion.CostoAdicional;
 			repo.Create(obj);
 		}
 

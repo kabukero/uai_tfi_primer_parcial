@@ -14,6 +14,7 @@ namespace DAL.Repositories.SqlServer.Adapters
 		{
 			IGenericRepository<Cliente> repoCliente = new ClienteRepository();
 			IGenericRepository<TelefonoTipo> repoTelefonoTipo = new TelefonoTipoRepository();
+			IGenericRepository<Empresa> repoEmpresa = new EmpresaRepository();
 
 			return new Telefono()
 			{
@@ -21,6 +22,7 @@ namespace DAL.Repositories.SqlServer.Adapters
 				Numero = values[(int)Columnas.NUMERO].ToString(),
 				Cliente = repoCliente.GetOne(Guid.Parse(values[(int)Columnas.CLIENTE_ID].ToString())),
 				TelefonoTipo = repoTelefonoTipo.GetOne(Guid.Parse(values[(int)Columnas.TELEFONO_TIPO_ID].ToString())),
+				Empresa= repoEmpresa.GetOne(Guid.Parse(values[(int)Columnas.EMPRESA_ID].ToString())),
 				Habilitado = bool.Parse(values[(int)Columnas.HABILITADO].ToString())
 			};
 		}
@@ -31,6 +33,7 @@ namespace DAL.Repositories.SqlServer.Adapters
 			NUMERO,
 			TELEFONO_TIPO_ID,
 			CLIENTE_ID,
+			EMPRESA_ID,
 			HABILITADO
 		}
 	}

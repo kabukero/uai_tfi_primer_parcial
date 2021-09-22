@@ -11,17 +11,8 @@ namespace Web
 {
 
 
-	public partial class ListadoTelefonos
+	public partial class FacturaListado
 	{
-
-		/// <summary>
-		/// gvTelefonos control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.GridView gvTelefonos;
 
 		/// <summary>
 		/// DDLCliente control.
@@ -33,40 +24,13 @@ namespace Web
 		protected global::System.Web.UI.WebControls.DropDownList DDLCliente;
 
 		/// <summary>
-		/// DDLEmpresa control.
+		/// CalFechaLLamada control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.DropDownList DDLEmpresa;
-
-		/// <summary>
-		/// DLLTipo control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.DropDownList DLLTipo;
-
-		/// <summary>
-		/// TxtNumero control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TxtNumero;
-
-		/// <summary>
-		/// ChkHabilitado control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.CheckBox ChkHabilitado;
+		protected global::System.Web.UI.WebControls.Calendar CalFechaLLamada;
 
 		/// <summary>
 		/// BtnGuardar control.
@@ -76,5 +40,14 @@ namespace Web
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
 		protected global::System.Web.UI.WebControls.Button BtnGuardar;
+
+		/// <summary>
+		/// gvFacturas control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.GridView gvFacturas;
 	}
 }

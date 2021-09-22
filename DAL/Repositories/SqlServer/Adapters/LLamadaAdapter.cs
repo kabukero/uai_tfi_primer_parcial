@@ -25,7 +25,8 @@ namespace DAL.Repositories.SqlServer.Adapters
 				DestinoDestino = repoDestino.GetOne(Guid.Parse(values[(int)Columnas.DESTINO_DESTINO_ID].ToString())),
 				DuracionMinutos = int.Parse(values[(int)Columnas.DURACION_MINUTOS].ToString()),
 				Promocion = repoPromocion.GetOne(Guid.Parse(values[(int)Columnas.PROMOCION_ID].ToString())),
-				FechaLlamada = DateTime.Parse(values[(int)Columnas.FECHA_LLAMADA].ToString())
+				FechaLlamada = DateTime.Parse(values[(int)Columnas.FECHA_LLAMADA].ToString()),
+				Importe = decimal.Parse(values[(int)Columnas.IMPORTE].ToString()),
 			};
 		}
 
@@ -39,6 +40,7 @@ namespace DAL.Repositories.SqlServer.Adapters
 			DURACION_MINUTOS,
 			PROMOCION_ID,
 			FECHA_LLAMADA,
+			IMPORTE
 		}
 	}
 }

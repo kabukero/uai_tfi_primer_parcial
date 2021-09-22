@@ -40,7 +40,7 @@ namespace Web
 		private void EnlazarDDL()
 		{
 			DDLTelefonoOrigen.DataValueField = "Id";
-			DDLTelefonoOrigen.DataTextField = "Numero";
+			DDLTelefonoOrigen.DataTextField = "TelefonoCliente";
 			DDLTelefonoOrigen.DataSource = serviceTelefono.GetAll().Where(x => x.Habilitado);
 			DDLTelefonoOrigen.DataBind();
 
@@ -50,7 +50,7 @@ namespace Web
 			DLLDestinoOrigen.DataBind();
 
 			DDLTelefonoDestino.DataValueField = "Id";
-			DDLTelefonoDestino.DataTextField = "Numero";
+			DDLTelefonoDestino.DataTextField = "TelefonoCliente";
 			DDLTelefonoDestino.DataSource = serviceTelefono.GetAll().Where(x => x.Habilitado);
 			DDLTelefonoDestino.DataBind();
 

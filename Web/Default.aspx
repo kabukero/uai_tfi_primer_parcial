@@ -28,10 +28,36 @@
             <a href="LLamadaListado" class="btn btn-primary btn-md">Listado LLamada</a>
         </div>
     </div>
+
     <div class="row"><br /></div>
     <div class="row">
         <div class="col-md-4 col-12 mb-3">
-            <a href="Reportes" class="btn btn-primary btn-md">Reportes</a>
+            <a href="FacturaListado" class="btn btn-primary btn-md">Listado facturas</a>
+        </div>
+    </div>
+
+    <div class="row"><br /></div>
+    <div class="row">
+        <div class="col-12 mb-3">
+            <a href="ReporteCargoMesCliente" class="btn btn-primary btn-md">Reporte Cargos por Mes de un Cliente</a>
+        </div>
+    </div>
+    <div class="row"><br /></div>
+    <div class="row">
+        <div class="col-12">
+            <a href="ReporteRecTotalMes" class="btn btn-primary btn-md">Reporte Recaudación total por mes</a>
+        </div>
+    </div>
+    <div class="row"><br /></div>
+    <div class="row">
+        <div class="col-12">
+            <a href="ReporteRecMesPromocion" class="btn btn-primary btn-md">Reporte Recaudación de un mes por promoción</a>
+        </div>
+    </div>
+    <div class="row"><br /></div>
+    <div class="row">
+        <div class="col-12">
+            <a href="ReportePorcLlamadas" class="btn btn-primary btn-md">Reporte Porcentaje de llamadas por tipo general y por cliente</a>
         </div>
     </div>
 </asp:Content>
